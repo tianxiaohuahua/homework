@@ -54,7 +54,7 @@ set_dont_touch_network [get_ports rstn]
 
 
 #设置理想网络
-#  mine : set_ideal_network [get_ports rstn]
+set_ideal_network [get_ports rstn]
 
 #设置verilogout不正确
 set verilogout_no_tri ture
