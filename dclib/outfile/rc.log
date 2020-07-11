@@ -1,0 +1,47 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pid
+Version: N-2017.09-SP5-2
+Date   : Thu Jul  9 17:03:33 2020
+****************************************
+
+Operating Conditions: ua11lschs12bdr_108c125_wc   Library: ua11lschs12bdr_108c125_wc
+Wire Load Model Mode: top
+
+  Startpoint: clk_10M_reg
+              (rising edge-triggered flip-flop clocked by my_clk)
+  Endpoint: clk_10M (output port clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pid                WL50                  ua11giohs33mvire_363c-40_bc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock my_clk (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.80       0.80
+  clk_10M_reg/CK (DFQRM2LM)                0.00       0.80 r
+  clk_10M_reg/Q (DFQRM2LM)                 1.26       2.06 r
+  clk_10M (out)                            0.00       2.06 r
+  data arrival time                                   2.06
+
+  clock my_clk (rise edge)                20.00      20.00
+  clock network delay (ideal)              0.80      20.80
+  clock uncertainty                       -0.30      20.50
+  output external delay                  -12.00       8.50
+  data required time                                  8.50
+  -----------------------------------------------------------
+  data required time                                  8.50
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                         6.44
+
+
+1
