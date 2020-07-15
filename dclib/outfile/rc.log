@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : pid
 Version: N-2017.09-SP5-2
-Date   : Thu Jul  9 17:03:33 2020
+Date   : Wed Jul 15 09:20:06 2020
 ****************************************
 
 Operating Conditions: ua11lschs12bdr_108c125_wc   Library: ua11lschs12bdr_108c125_wc
@@ -21,16 +21,16 @@ Wire Load Model Mode: top
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  pid                WL50                  ua11giohs33mvire_363c-40_bc
+  pid                wl0                   ua11lschs12bdr_108c125_wc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
   clock my_clk (rise edge)                 0.00       0.00
   clock network delay (ideal)              0.80       0.80
   clk_10M_reg/CK (DFQRM2LM)                0.00       0.80 r
-  clk_10M_reg/Q (DFQRM2LM)                 1.26       2.06 r
-  clk_10M (out)                            0.00       2.06 r
-  data arrival time                                   2.06
+  clk_10M_reg/Q (DFQRM2LM)                 0.78       1.58 r
+  clk_10M (out)                            0.00       1.58 r
+  data arrival time                                   1.58
 
   clock my_clk (rise edge)                20.00      20.00
   clock network delay (ideal)              0.80      20.80
@@ -39,9 +39,9 @@ Wire Load Model Mode: top
   data required time                                  8.50
   -----------------------------------------------------------
   data required time                                  8.50
-  data arrival time                                  -2.06
+  data arrival time                                  -1.58
   -----------------------------------------------------------
-  slack (MET)                                         6.44
+  slack (MET)                                         6.92
 
 
 1
